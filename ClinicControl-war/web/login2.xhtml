@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./resources/templates/loginTemplate.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <h:form id="form1">
+            <p:focus id="focus" for="txtU" />
+            <p:growl id="growl" showDetail="true" sticky="false" life="5000" showSummary="false" />
+            <table id="tblogin" align="center">
+
+                <tr>
+                    <td colspan="2"><h1>LOGIN</h1></td>
+                </tr>
+                <tr>
+                    <td>Usuario</td>
+                    <td><h:inputText id="txtU"  value="#{loginController.usuario}"/>
+                        <p:focus for="txtU"/> </td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><h:inputSecret id="txtC" value="#{loginController.clave}" /></td>
+                </tr>
+                <tr>
+                    <td>Compañia</td>
+                    <td>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><p:commandButton   value="Ingresar" 
+                                                                      update=":form1"/> 
+                    </td>
+                </tr>
+            </table>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

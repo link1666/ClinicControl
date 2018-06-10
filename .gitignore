@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/ClinicControl-ejb/build/
+/ClinicControl-ejb/nbproject/private/
+/ClinicControl-war/build/
+/ClinicControl-war/nbproject/private/
+/ClinicControl-war/dist/
+/build/
+/dist/
+/ClinicControl-ejb/dist/
